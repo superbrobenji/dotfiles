@@ -1,0 +1,7 @@
+[pull]
+	rebase = true
+	default = current
+[fetch]
+	prune = true
+[push]
+	default = current
