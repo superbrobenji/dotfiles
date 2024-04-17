@@ -100,24 +100,16 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-lazynvm() {
-  unset -f nvm node npm
+
+
   export NVM_DIR=~/.nvm
   [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
   nvm use default
-}
 
-nvm() {
-  lazynvm
-  nvm $@
-}
-
-node() {
-  lazynvm
-  node $@
-}
-
-npm() {
-  lazynvm
-  npm $@
-}
+  export GOPATH=$HOME/go
+  export GOROOT=/usr/local/go
+  export GOBIN=$GOPATH/bin
+  export PATH=$PATH:$GOPATH
+  export PATH=$PATH:$GOROOT/bin
+  
+  export PATH=$PATH:/{your_user_path}/.npm-global/bin
