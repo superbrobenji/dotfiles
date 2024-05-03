@@ -111,5 +111,10 @@ source $ZSH/oh-my-zsh.sh
   export GOBIN=$GOPATH/bin
   export PATH=$PATH:$GOPATH
   export PATH=$PATH:$GOROOT/bin
+  export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
   
   export PATH=$PATH:/{your_user_path}/.npm-global/bin
+
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  tmux a -t default || exec tmux new -s default && exit;
+fi
