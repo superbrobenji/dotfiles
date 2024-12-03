@@ -1,0 +1,13 @@
+[pull]
+	rebase = true
+	default = current
+[fetch]
+	prune = true
+[push]
+	default = current
+[user]
+	name = Benjamin Swanepoel
+	email = 49689582+superbrobenji@users.noreply.github.com
+[core]
+	autocrlf = false
+	filemode = false
