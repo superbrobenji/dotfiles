@@ -113,10 +113,7 @@ source $ZSH/oh-my-zsh.sh
   export PATH=$PATH:$GOROOT/bin
   export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
   
-
 eval $(thefuck --alias)
-
-
 
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   tmux a -t default || exec tmux new -s default && exit;
