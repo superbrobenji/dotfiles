@@ -1,0 +1,9 @@
+.DS_Store
+.gitconfig-work
+.gitconfig-personal
+.npmrc
+.yarnrc
+.yarnrc.yml
+.zsh_history
+.zsh_sessions/
+.zcompdump*
