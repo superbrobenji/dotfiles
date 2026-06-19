@@ -1,5 +1,5 @@
 [user]
-	email = 49689582+superbrobenji@users.noreply.github.com
+	email = [PERSONAL EMAIL]
 	signingkey = ~/.ssh/id_ed25519_personal
 [core]
 	sshCommand = ssh -i ~/.ssh/id_ed25519_personal -o IdentitiesOnly=yes
