@@ -1,6 +1,8 @@
 .DS_Store
 .gitconfig-work
 .gitconfig-personal
+.ssh/id_*
+.ssh/known_hosts
 .npmrc
 .yarnrc
 .yarnrc.yml
