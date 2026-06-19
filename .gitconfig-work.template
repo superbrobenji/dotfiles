@@ -1,3 +1,5 @@
 [user]
 	email = [WORK EMAIL]
 	signingkey = ~/.ssh/id_ed25519_work
+[core]
+	sshCommand = ssh -i ~/.ssh/id_ed25519_work -o IdentitiesOnly=yes
