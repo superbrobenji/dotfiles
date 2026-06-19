@@ -22,13 +22,3 @@
 
 [includeIf "gitdir:~/projects/work/"]
 	path = ~/.gitconfig-work
-
-# ~/.gitconfig-personal template:
-# [user]
-#     email = 49689582+superbrobenji@users.noreply.github.com
-#     signingkey = ~/.ssh/id_ed25519
-
-# ~/.gitconfig-work template:
-# [user]
-#     email = [WORK EMAIL]
-#     signingkey = ~/.ssh/id_ed25519_work
